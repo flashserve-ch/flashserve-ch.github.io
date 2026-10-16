@@ -44,7 +44,7 @@ Après une modification de `styles.css` ou `main.js`, augmentez le numéro `?v=1
 
 - Pas de cookies, pas de statistiques, aucun script externe.
 - Les contacts passent par des liens e-mail vers `flashserve@icloud.com`.
-- Seul le formulaire **« Réserver gratuitement »** envoie des informations (nom, téléphone, restaurant, ville, e-mail et demande facultatifs) : elles partent par e-mail vers `flashserve@icloud.com` via le service **Web3Forms**, avec l'accord explicite du visiteur (case à cocher). La clé Web3Forms se trouve dans le champ caché `access_key` des deux pages ; elle est publique par conception. Tant qu'elle n'est pas renseignée, le bouton ouvre simplement un e-mail pré-rempli.
+- Seul le formulaire **« Réserver gratuitement »** envoie des informations (nom, téléphone, restaurant, ville, e-mail et demande facultatifs) : elles partent par e-mail vers `flashserve@icloud.com` via le service **Web3Forms**, avec l'accord explicite du visiteur (case à cocher). La clé Web3Forms se trouve dans le champ caché `access_key` des deux pages ; elle est publique par conception. Sans clé valide, le bouton ouvre simplement un e-mail pré-rempli.
 - Une politique de sécurité du contenu (CSP) bloque tout script ou style qui ne vient pas du site lui-même. Seul `api.web3forms.com` y est autorisé (pour le formulaire). Si un jour vous ajoutez un autre outil externe (statistiques, carte, vidéo…), il faudra l'autoriser dans la balise `Content-Security-Policy` des pages.
 - Ce repository est **public** : ne jamais y déposer de mot de passe, de clé ou de document interne.
 
