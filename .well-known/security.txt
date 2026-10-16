@@ -1,0 +1,4 @@
+Contact: mailto:flashserve@icloud.com
+Expires: 2027-10-16T00:00:00.000Z
+Preferred-Languages: fr, en
+Canonical: https://flashserve-ch.github.io/.well-known/security.txt

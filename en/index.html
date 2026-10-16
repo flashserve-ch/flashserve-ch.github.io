@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; manifest-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>FlashServe: on-site ordering without the wait | Geneva</title>
+  <meta name="description" content="Your customers order from their phone the moment they arrive, thanks to Bluetooth (BLE) and geofencing. Pilot program from January 1, 2027 at CHF 59.90/month.">
+  <link rel="canonical" href="https://flashserve-ch.github.io/en/">
+  <link rel="alternate" hreflang="fr" href="https://flashserve-ch.github.io/">
+  <link rel="alternate" hreflang="en" href="https://flashserve-ch.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://flashserve-ch.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FlashServe">
+  <meta property="og:title" content="FlashServe: serve faster, wait less">
+  <meta property="og:description" content="Your customers order from their phone the moment they arrive, thanks to Bluetooth (BLE) and geofencing. Pilot program from January 1, 2027 at CHF 59.90/month.">
+  <meta property="og:url" content="https://flashserve-ch.github.io/en/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_CH">
+  <meta property="og:image" content="https://flashserve-ch.github.io/assets/img/og-en.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="FlashServe logo on a navy background with the tagline “Serve faster. Wait less.”">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#0B1F3A">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+
+  <link rel="preload" href="../assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/styles.css?v=1.0.0">
+  <script src="../assets/js/main.js?v=1.0.0" defer></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "FlashServe", "url": "https://flashserve-ch.github.io/", "logo": "https://flashserve-ch.github.io/icon-512.png", "email": "flashserve@icloud.com", "description": "Your customers order from their phone the moment they arrive, thanks to Bluetooth (BLE) and geofencing. Pilot program from January 1, 2027 at CHF 59.90/month.", "foundingLocation": {"@type": "Place", "name": "Geneva, Switzerland"}, "areaServed": ["CH", "FR"], "founder": [{"@type": "Person", "name": "Idriss Yahi", "jobTitle": "CFO"}, {"@type": "Person", "name": "Hugo Robert", "jobTitle": "Head of Human Resources"}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="./" aria-label="FlashServe, back to home">
+        <img src="../assets/img/logo.svg" alt="" width="148" height="34">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <ul>
+          <li><a class="nav-link" href="#how">How it works</a></li>
+          <li><a class="nav-link" href="#pilot">Pilot offer</a></li>
+          <li><a class="nav-link" href="#roadmap">Roadmap</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Choose language"><a href="../" hreflang="fr" lang="fr" data-lang-link>FR</a><span aria-current="true" lang="en">EN</span></div>
+        <a class="btn btn--outline" href="mailto:flashserve@icloud.com?subject=FLASHSERVE%20Contact%20---"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.2 8 5.8 8-5.8"/></svg>Contact us</a>
+        <a class="btn btn--primary" href="#pilot">Become a partner</a>
+      </div>
+
+      <details class="nav-mobile">
+        <summary>
+          <span class="icon-open"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span><span class="icon-close"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span>
+          Menu
+        </summary>
+        <div class="mobile-panel">
+          <nav aria-label="Main menu">
+            <ul>
+          <li><a class="nav-link" href="#how">How it works</a></li>
+          <li><a class="nav-link" href="#pilot">Pilot offer</a></li>
+          <li><a class="nav-link" href="#roadmap">Roadmap</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <a class="btn btn--primary" href="#pilot">Become a partner</a>
+          <a class="btn btn--outline" href="mailto:flashserve@icloud.com?subject=FLASHSERVE%20Contact%20---"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.2 8 5.8 8-5.8"/></svg>Contact us</a>
+          <div class="lang-switch" role="group" aria-label="Choose language"><a href="../" hreflang="fr" lang="fr" data-lang-link>FR</a><span aria-current="true" lang="en">EN</span></div>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge"><span class="badge-dot" aria-hidden="true"></span>Pilot program · starts January 1, 2027</p>
+          <h1 id="hero-title"><span>Serve faster.</span> <span>Wait less.</span></h1>
+          <p class="lead">FlashServe recognizes your customers the moment they arrive, using Bluetooth (BLE) and geofencing (a virtual perimeter around your venue). They order from their phone: no queue, no lost time.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" href="#pilot">Join the pilot</a>
+            <a class="btn btn--outline btn--lg" href="#contact">Investors &amp; partners</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" role="img" aria-label="Animated illustration: a customer's phone detects the restaurant via Bluetooth and geofencing, shows the menu, then sends the order to the team.">
+          <svg class="radar" viewBox="0 0 560 560" aria-hidden="true" focusable="false">
+            <defs><path id="zone-arc-en" d="M 414.2 471.7 A 234 234 0 0 0 513.9 288.2"/></defs>
+            <circle class="geofence" cx="280" cy="280" r="250"/>
+            <text class="zone-label"><textPath href="#zone-arc-en" startOffset="50%" text-anchor="middle">Virtual perimeter</textPath></text>
+            <circle class="ring ring-1" cx="280" cy="280" r="230"/>
+            <circle class="ring ring-2" cx="280" cy="280" r="230"/>
+            <circle class="ring ring-3" cx="280" cy="280" r="230"/>
+          </svg>
+
+          <div class="phone" aria-hidden="true">
+            <div class="phone-screen">
+              <span class="ph-island"></span>
+              <div class="ph-status"><span>12:30</span><span>5G</span></div>
+              <div class="ph-notif">
+                <span class="ph-notif-icon"><img src="../assets/img/logo-mark.svg" alt="" width="24" height="24"></span>
+                <span><strong>Welcome! The menu is ready</strong><small>Tap to order on-site</small></span>
+              </div>
+              <div class="ph-venue">
+                <div class="ph-venue-name">Your restaurant</div>
+                <div class="ph-venue-meta"><i></i>You're on-site</div>
+              </div>
+              <div class="ph-tabs"><span>All</span><span>Mains</span><span>Drinks</span></div>
+              <ul class="ph-menu">
+                  <li class="ph-item">
+                    <span class="ph-thumb"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5C4 7.1 7.6 5 12 5s8 2.1 8 5.5H4Z"/><path d="M3 14h18"/><path d="M5 17h14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2Z"/></svg></span>
+                    <span class="ph-item-text"><span class="ph-item-name">House burger</span><span class="ph-item-price">CHF 18.50</span></span>
+                    <span class="ph-add ph-add--1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5v13M5.5 12h13"/></svg></span>
+                  </li>
+                  <li class="ph-item">
+                    <span class="ph-thumb"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10h12l-1.5 10h-9L6 10Z"/><path d="M8.2 10V4.5M11 10V3.5M13.8 10V4.5M16.2 10V6"/></svg></span>
+                    <span class="ph-item-text"><span class="ph-item-name">House fries</span><span class="ph-item-price">CHF 6.00</span></span>
+                    <span class="ph-add ph-add--2"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5v13M5.5 12h13"/></svg></span>
+                  </li>
+                  <li class="ph-item">
+                    <span class="ph-thumb"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7.5h10L15.8 20H8.2L7 7.5Z"/><path d="M12 7.5 14 3h3"/><path d="M7.5 11.5h9"/></svg></span>
+                    <span class="ph-item-text"><span class="ph-item-name">Lemonade</span><span class="ph-item-price">CHF 4.50</span></span>
+                    <span class="ph-add ph-add--3"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5v13M5.5 12h13"/></svg></span>
+                  </li>
+                  <li class="ph-item">
+                    <span class="ph-thumb"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V9Z"/><path d="M16 10.5h1.4a2.5 2.5 0 0 1 0 5H15.6"/><path d="M8.5 3.5V6M12 3.5V6"/></svg></span>
+                    <span class="ph-item-text"><span class="ph-item-name">Coffee</span><span class="ph-item-price">CHF 3.80</span></span>
+                    <span class="ph-add ph-add--4"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5v13M5.5 12h13"/></svg></span>
+                  </li>
+              </ul>
+              <div class="ph-cart">
+                <div class="ph-cart-btn"><span class="t0">Add your dishes</span><span class="t1">Order · CHF 18.50</span><span class="t2">Order · CHF 24.50</span></div>
+              </div>
+              <div class="ph-sent">
+                <span class="ph-check"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.3 4.3L19 7"/></svg></span>
+                <strong>Order sent</strong>
+                <small>The team is preparing your order.</small>
+              </div>
+            </div>
+          </div>
+
+          <span class="chip chip--geo" aria-hidden="true"><span class="chip-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.6" stroke-dasharray="2.2 3"/><circle cx="12" cy="12" r="2.6" fill="currentColor" stroke="none"/></svg></span>Customer detected</span>
+          <span class="chip chip--ble" aria-hidden="true"><span class="chip-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 10.3a10.5 10.5 0 0 1 14.8 0M7.8 13.6a6 6 0 0 1 8.4 0"/><circle cx="12" cy="17.2" r="1.2" fill="currentColor"/></svg></span>BLE signal</span>
+          <span class="chip chip--team" aria-hidden="true"><span class="chip-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.3 4.3L19 7"/></svg></span>Order received by the team</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- We sell time -->
+    <section class="section" id="time" aria-labelledby="time-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="time-title">We sell time.</h2>
+          <p class="lead">At peak hours, every minute of waiting weighs on your service. FlashServe gives that time back to your team and your customers.</p>
+        </div>
+        <ul class="problems">
+          <li class="problem">
+            <div class="problem-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="8" r="2.2"/><circle cx="12" cy="8" r="2.2"/><circle cx="18" cy="8" r="2.2"/><path d="M2.6 18c.4-2.6 1.7-4 3.4-4s3 1.4 3.4 4M8.6 18c.4-2.6 1.7-4 3.4-4s3 1.4 3.4 4M14.6 18c.4-2.6 1.7-4 3.4-4s3 1.4 3.4 4"/></svg></div>
+            <h3>Queues cost sales</h3>
+            <p>At peak hours, a long line discourages customers before they even order.</p>
+          </li>
+          <li class="problem">
+            <div class="problem-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="11" height="14" rx="2"/><path d="M8.5 21H17a2 2 0 0 0 2-2V7.5"/><path d="M8 7.5h5M8 10.5h5M8 13.5h3"/></svg></div>
+            <h3>Overloaded staff</h3>
+            <p>During the rush, your team juggles taking orders, payments and service at the same time.</p>
+          </li>
+          <li class="problem">
+            <div class="problem-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 4H6.2a1.2 1.2 0 0 0-1.2 1.2v13.6A1.2 1.2 0 0 0 6.2 20h7.3"/><path d="M10.5 12H21M17 8l4 4-4 4"/></svg></div>
+            <h3>Customers who leave</h3>
+            <p>When the wait is too long, customers walk away, and don't always come back.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section--glacier" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="how-title">How it works</h2>
+          <p class="lead">Three steps. Zero queue.</p>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <div class="step-body">
+              <h3><span class="visually-hidden">1. </span>Arrive</h3>
+              <p>The customer's phone detects the venue automatically.</p>
+              <span class="step-tag">BLE + geofencing</span>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <div class="step-body">
+              <h3><span class="visually-hidden">2. </span>Order</h3>
+              <p>The menu opens on their phone and they place their order.</p>
+              <span class="step-tag">Right from their seat</span>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <div class="step-body">
+              <h3><span class="visually-hidden">3. </span>Get served</h3>
+              <p>The order reaches the team instantly.</p>
+              <span class="step-tag">In real time</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Pilot offer -->
+    <section class="section section--navy pilot on-dark" id="pilot" aria-labelledby="pilot-title">
+      <div class="container pilot-grid">
+        <div class="pilot-copy">
+          <p class="badge badge--gold"><span class="badge-dot" aria-hidden="true"></span>Limited places</p>
+          <h2 id="pilot-title">Pilot Partner Program 2027</h2>
+          <p class="lead">Be among the first venues to run FlashServe, and help us build the official app.</p>
+          <ul class="included">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.4 2.7 2.7L16.3 9.3"/></svg>
+              <div>
+              <strong>Full access to the functional FlashServe demo app</strong>
+              <span>From January 1, 2027, at CHF 59.90 per month for 1 year: a promotion reserved for partners.</span>
+              </div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.4 2.7 2.7L16.3 9.3"/></svg>
+              <div>
+              <strong>Partner status</strong>
+              <span>Your feedback and the demo app's usage data directly shape FlashServe V1, the official app.</span>
+              </div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.4 2.7 2.7L16.3 9.3"/></svg>
+              <div>
+              <strong>A direct line to the founders</strong>
+              <div class="founders-line">
+                <p><b>Idriss Yahi</b>, Chief Financial Officer (CFO)</p>
+                <p><b>Hugo Robert</b>, Head of Human Resources</p>
+                <p><a href="mailto:flashserve@icloud.com?subject=FLASHSERVE%20Contact%20---">flashserve@icloud.com</a></p>
+              </div>
+              </div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.4 2.7 2.7L16.3 9.3"/></svg>
+              <div>
+              <strong>Limited places</strong>
+              <span>The pilot is open to a small number of venues, so every partner gets our full attention.</span>
+              </div>
+            </li>
+          </ul>
+          <div class="wink">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.4 2 4.6 13.6h6.2L9.9 22l8.8-11.6h-6.2L13.4 2Z"/></svg>
+            <div>
+              <p class="wink-joke">We can't promise you'll get rich in a flash… but your customers will be served in one.</p>
+              <p class="wink-cta">Places are limited: become a partner, or why not an investor, in a Geneva startup built for speed. <a href="mailto:flashserve@icloud.com?subject=FLASHSERVE%20Investor%20%26%20partner%20request%20---&amp;body=Hello%20Idriss%20and%20Hugo%2C%0D%0A%0D%0AI%27d%20like%20to%20talk%20with%20you%20about%20FlashServe.%0D%0A%0D%0AName%3A%0D%0AOrganization%3A%0D%0AI%27m%20interested%20as%3A%20investor%20%2F%20partner%0D%0A%0D%0ABest%20regards%2C">Talk to us about investing</a></p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="price-card" aria-labelledby="price-title">
+          <div class="price-card-top">
+            <h3 class="price-label" id="price-title">Partner rate</h3>
+            <span class="price-promo">Partner promotion</span>
+          </div>
+          <p class="price"><span class="price-currency">CHF</span><span class="price-amount">59.90</span><span class="price-period">/ month</span></p>
+          <p class="price-terms">for <b>1 year</b>, starting <b>January 1, 2027</b></p>
+          <ul class="price-facts">
+              <li><span>Start</span><b>January 1, 2027</b></li>
+              <li><span>Duration</span><b>12 months</b></li>
+              <li><span>Included</span><b>Functional demo app</b></li>
+              <li><span>Official V1 price (Aug. 2027, est.)</span><b>CHF 250 / month</b></li>
+          </ul>
+          <a class="btn btn--primary btn--lg btn--block" href="mailto:flashserve@icloud.com?subject=FLASHSERVE%20Pilote%20request%20---&amp;body=Hello%20FlashServe%20team%2C%0D%0A%0D%0AWe%20would%20like%20to%20join%20the%20Pilot%20Partner%20Program%202027.%0D%0A%0D%0ARestaurant%20name%3A%0D%0ACity%3A%0D%0AContact%20person%3A%0D%0APhone%3A%0D%0A%0D%0AThank%20you%21"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.2 8 5.8 8-5.8"/></svg>Become a pilot partner</a>
+          <p class="price-note">Opens an email to flashserve@icloud.com</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="section" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="roadmap-title">Roadmap</h2>
+          <p class="lead">From the demo to the official app in 2027.</p>
+        </div>
+        <ol class="timeline">
+          <li class="milestone milestone--now">
+            <span class="milestone-dot" aria-hidden="true"></span>
+            <time>Autumn 2026</time>
+            <h3>Demo app in development</h3>
+            <span class="milestone-tag">We are here</span>
+          </li>
+          <li class="milestone milestone--pilot">
+            <span class="milestone-dot" aria-hidden="true"></span>
+            <time>January 1, 2027</time>
+            <h3>Functional demo app and pilot program launch</h3>
+            <span class="milestone-tag">Pilot</span>
+          </li>
+          <li class="milestone">
+            <span class="milestone-dot" aria-hidden="true"></span>
+            <time>January – August 2027</time>
+            <h3>Pilot phase</h3>
+            <p>Partners' feedback and usage, and analysis of the data collected during the pilot phase, to improve our final product.</p>
+          </li>
+          <li class="milestone milestone--v1">
+            <span class="milestone-dot" aria-hidden="true"></span>
+            <time>August 2027 (estimated)</time>
+            <h3>FlashServe V1, the official app</h3>
+            <div class="v1-price">
+              <p><b>CHF 250</b> / month</p>
+              <p>or <b>CHF 2,500 / year</b> when the full amount is paid at subscription (save CHF 500)</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--glacier" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="section-head">
+          <h2 id="about-title">Founded in Geneva.</h2>
+          <p class="lead">For busy food venues in Switzerland and France.</p>
+        </div>
+        <div>
+          <h3 class="visually-hidden">The founders</h3>
+          <ul class="founders">
+            <li class="founder">
+              <span class="avatar" aria-hidden="true">IY</span>
+              <div><h3>Idriss Yahi</h3><p>Chief Financial Officer (CFO)</p></div>
+            </li>
+            <li class="founder">
+              <span class="avatar" aria-hidden="true">HR</span>
+              <div><h3>Hugo Robert</h3><p>Head of Human Resources</p></div>
+            </li>
+          </ul>
+          <p class="founders-mail">Write to the founders: <a href="mailto:flashserve@icloud.com">flashserve@icloud.com</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="contact-title">Get in touch.</h2>
+          <p class="lead">One email is all it takes. Choose the option that fits you.</p>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card contact-card--restaurants">
+            <p class="contact-kicker">Restaurants</p>
+            <h3>Become a pilot partner</h3>
+            <p>Join the Pilot Partner Program 2027 at CHF 59.90 per month for 1 year.</p>
+            <a class="btn btn--primary btn--lg" href="mailto:flashserve@icloud.com?subject=FLASHSERVE%20Pilote%20request%20---&amp;body=Hello%20FlashServe%20team%2C%0D%0A%0D%0AWe%20would%20like%20to%20join%20the%20Pilot%20Partner%20Program%202027.%0D%0A%0D%0ARestaurant%20name%3A%0D%0ACity%3A%0D%0AContact%20person%3A%0D%0APhone%3A%0D%0A%0D%0AThank%20you%21"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.2 8 5.8 8-5.8"/></svg>Email us<span class="visually-hidden">: Become a pilot partner</span></a>
+          </article>
+          <article class="contact-card contact-card--investors on-dark">
+            <p class="contact-kicker">Investors &amp; partners</p>
+            <h3>Let's talk</h3>
+            <p>Discover the opportunity behind FlashServe, a Geneva startup preparing its official app for August 2027.</p>
+            <a class="btn btn--gold btn--lg" href="mailto:flashserve@icloud.com?subject=FLASHSERVE%20Investor%20%26%20partner%20request%20---&amp;body=Hello%20Idriss%20and%20Hugo%2C%0D%0A%0D%0AI%27d%20like%20to%20talk%20with%20you%20about%20FlashServe.%0D%0A%0D%0AName%3A%0D%0AOrganization%3A%0D%0AI%27m%20interested%20as%3A%20investor%20%2F%20partner%0D%0A%0D%0ABest%20regards%2C"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.2 8 5.8 8-5.8"/></svg>Email us<span class="visually-hidden">: Investors &amp; partners</span></a>
+          </article>
+        </div>
+        <ul class="contact-direct">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.2 8 5.8 8-5.8"/></svg><a href="mailto:flashserve@icloud.com">flashserve@icloud.com</a></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.4a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.6" r="2.5"/></svg>Geneva, Switzerland</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="../assets/img/logo-white.svg" alt="FlashServe" width="156" height="36">
+          <p>Serve faster. Wait less.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Site map">
+          <ul>
+          <li><a class="footer-link" href="#how">How it works</a></li>
+          <li><a class="footer-link" href="#pilot">Pilot offer</a></li>
+          <li><a class="footer-link" href="#roadmap">Roadmap</a></li>
+          <li><a class="footer-link" href="#about">About</a></li>
+          <li><a class="footer-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <ul>
+          <li>© 2026 FlashServe</li>
+          <li>Geneva</li>
+          <li><a href="mailto:flashserve@icloud.com">flashserve@icloud.com</a></li>
+        </ul>
+        <div class="lang-switch" role="group" aria-label="Choose language"><a href="../" hreflang="fr" lang="fr" data-lang-link>FR</a><span aria-current="true" lang="en">EN</span></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
