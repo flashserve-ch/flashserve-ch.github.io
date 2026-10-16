@@ -29,7 +29,7 @@ Le site est publié automatiquement par **GitHub Pages** à chaque modification 
 4. Cliquer sur **Commit changes**. Le site se met à jour en 1 à 2 minutes.
 
 Pensez à faire la même modification dans les **deux langues**.
-Après une modification de `styles.css` ou `main.js`, augmentez le numéro `?v=1.0.0` dans les deux pages HTML pour que les visiteurs reçoivent la nouvelle version.
+Après une modification de `styles.css` ou `main.js`, augmentez le numéro `?v=1.1.0` dans les deux pages HTML pour que les visiteurs reçoivent la nouvelle version.
 
 ## Couleurs de la marque
 
@@ -42,9 +42,10 @@ Après une modification de `styles.css` ou `main.js`, augmentez le numéro `?v=1
 
 ## Sécurité
 
-- Le site ne collecte **aucune donnée** : pas de formulaire, pas de cookies, pas de statistiques, aucun service externe.
+- Pas de cookies, pas de statistiques, aucun script externe.
 - Les contacts passent par des liens e-mail vers `flashserve@icloud.com`.
-- Une politique de sécurité du contenu (CSP) bloque tout script ou style qui ne vient pas du site lui-même. Si un jour vous ajoutez un outil externe (statistiques, carte, vidéo…), il faudra l'autoriser dans la balise `Content-Security-Policy` des pages.
+- Seul le formulaire **« Réserver gratuitement »** envoie des informations (nom, téléphone, restaurant, ville, e-mail et demande facultatifs) : elles partent par e-mail vers `flashserve@icloud.com` via le service **Web3Forms**, avec l'accord explicite du visiteur (case à cocher). La clé Web3Forms se trouve dans le champ caché `access_key` des deux pages ; elle est publique par conception. Tant qu'elle n'est pas renseignée, le bouton ouvre simplement un e-mail pré-rempli.
+- Une politique de sécurité du contenu (CSP) bloque tout script ou style qui ne vient pas du site lui-même. Seul `api.web3forms.com` y est autorisé (pour le formulaire). Si un jour vous ajoutez un autre outil externe (statistiques, carte, vidéo…), il faudra l'autoriser dans la balise `Content-Security-Policy` des pages.
 - Ce repository est **public** : ne jamais y déposer de mot de passe, de clé ou de document interne.
 
 ## Brancher plus tard le domaine flashserve.ch

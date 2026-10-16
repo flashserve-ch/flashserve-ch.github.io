@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; manifest-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; manifest-src 'self'; connect-src 'self' https://api.web3forms.com; base-uri 'none'; form-action https://api.web3forms.com; object-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>FlashServe : la commande sur place sans attente | Genève</title>
   <meta name="description" content="Vos clients commandent sur leur téléphone dès leur arrivée, grâce au Bluetooth (BLE) et au geofencing. Programme pilote dès le 1er janvier 2027 à CHF 59.90/mois.">
@@ -32,8 +32,8 @@
   <link rel="manifest" href="site.webmanifest">
 
   <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/styles.css?v=1.0.0">
-  <script src="assets/js/main.js?v=1.0.0" defer></script>
+  <link rel="stylesheet" href="assets/css/styles.css?v=1.1.0">
+  <script src="assets/js/main.js?v=1.1.0" defer></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "FlashServe", "url": "https://flashserve-ch.github.io/", "logo": "https://flashserve-ch.github.io/icon-512.png", "email": "flashserve@icloud.com", "description": "Vos clients commandent sur leur téléphone dès leur arrivée, grâce au Bluetooth (BLE) et au geofencing. Programme pilote dès le 1er janvier 2027 à CHF 59.90/mois.", "foundingLocation": {"@type": "Place", "name": "Geneva, Switzerland"}, "areaServed": ["CH", "FR"], "founder": [{"@type": "Person", "name": "Idriss Yahi", "jobTitle": "CFO"}, {"@type": "Person", "name": "Hugo Robert", "jobTitle": "Head of Human Resources"}]}</script>
 </head>
 <body>
@@ -274,6 +274,7 @@
           </div>
         </div>
 
+        <div class="pilot-side">
         <aside class="price-card" aria-labelledby="price-title">
           <div class="price-card-top">
             <h3 class="price-label" id="price-title">Tarif partenaire</h3>
@@ -290,6 +291,27 @@
           <a class="btn btn--primary btn--lg btn--block" href="mailto:flashserve@icloud.com?subject=FLASHSERVE%20Pilote%20request%20---&amp;body=Bonjour%20l%27%C3%A9quipe%20FlashServe%2C%0D%0A%0D%0ANous%20souhaitons%20rejoindre%20le%20Programme%20Partenaire%20Pilote%202027.%0D%0A%0D%0ANom%20du%20restaurant%20%3A%0D%0AVille%20%3A%0D%0APersonne%20de%20contact%20%3A%0D%0AT%C3%A9l%C3%A9phone%20%3A%0D%0A%0D%0AMerci%20%21"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.2 8 5.8 8-5.8"/></svg>Devenir partenaire pilote</a>
           <p class="price-note">Ouvre un e-mail vers flashserve@icloud.com</p>
         </aside>
+
+        <aside class="reserve-card" aria-labelledby="reserve-title">
+          <div class="pass" aria-hidden="true">
+            <div class="pass-main">
+              <span class="pass-brand"><img src="assets/img/logo-mark.svg" alt="" width="24" height="24">FlashServe</span>
+              <strong class="pass-title">Pass pilote 2027</strong>
+              <span class="pass-sub">Pré-réservation</span>
+              <span class="pass-date">Dès le 1er janvier 2027</span>
+            </div>
+            <div class="pass-stub">
+              <span class="pass-price">CHF 0</span>
+              <span class="pass-free">Gratuit</span>
+            </div>
+            <span class="pass-stamp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.3 4.3L19 7"/></svg>Place réservée</span>
+          </div>
+          <h3 id="reserve-title">Réservez votre place gratuitement</h3>
+          <p>Pré-réservez le service FlashServe sans paiement ni engagement. Nous vous recontactons pour préparer votre lancement au 1er janvier 2027.</p>
+          <a class="btn btn--gold btn--lg btn--block" href="mailto:flashserve@icloud.com?subject=FLASHSERVE%20Pilote%20request%20---&amp;body=Bonjour%20l%27%C3%A9quipe%20FlashServe%2C%0D%0A%0D%0ANous%20souhaitons%20rejoindre%20le%20Programme%20Partenaire%20Pilote%202027.%0D%0A%0D%0ANom%20du%20restaurant%20%3A%0D%0AVille%20%3A%0D%0APersonne%20de%20contact%20%3A%0D%0AT%C3%A9l%C3%A9phone%20%3A%0D%0A%0D%0AMerci%20%21" data-open-reserve>Réserver gratuitement</a>
+          <p class="reserve-note">Gratuit, sans engagement, en 1 minute.</p>
+        </aside>
+        </div>
       </div>
     </section>
 
@@ -412,5 +434,66 @@
       </div>
     </div>
   </footer>
+
+  <dialog class="reserve-dialog" id="reserve-dialog" aria-labelledby="dlg-title">
+    <div class="dlg-inner">
+      <button class="dlg-close" type="button" data-close-dialog aria-label="Fermer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+
+      <div class="dlg-view" data-view="form">
+        <p class="badge badge--gold"><span class="badge-dot" aria-hidden="true"></span>CHF 0</p>
+        <h2 id="dlg-title">Pré-réservation gratuite</h2>
+        <p class="dlg-sub">Programme Partenaire Pilote 2027. Aucun paiement n'est demandé.</p>
+        <form class="reserve-form" action="https://api.web3forms.com/submit" method="post" data-lang="fr" novalidate>
+          <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY">
+          <p class="form-hint">Les champs marqués d'un astérisque (*) sont obligatoires.</p>
+          <div class="field-grid">
+            <div class="field">
+              <label for="r-name-fr">Nom et prénom <span aria-hidden="true">*</span></label>
+              <input id="r-name-fr" name="name" type="text" autocomplete="name" required maxlength="120">
+            </div>
+            <div class="field">
+              <label for="r-phone-fr">Téléphone <span aria-hidden="true">*</span></label>
+              <input id="r-phone-fr" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="30" pattern="[\d\s\+\-\.\/\(\)]{8,30}" placeholder="+41 …">
+            </div>
+            <div class="field">
+              <label for="r-restaurant-fr">Nom du restaurant <span aria-hidden="true">*</span></label>
+              <input id="r-restaurant-fr" name="restaurant" type="text" autocomplete="organization" required maxlength="120">
+            </div>
+            <div class="field">
+              <label for="r-city-fr">Ville <span aria-hidden="true">*</span></label>
+              <input id="r-city-fr" name="city" type="text" autocomplete="address-level2" required maxlength="80">
+            </div>
+            <div class="field">
+              <label for="r-email-fr">E-mail <span class="opt">(facultatif)</span></label>
+              <input id="r-email-fr" name="email" type="email" autocomplete="email" maxlength="160">
+            </div>
+            <div class="field">
+              <label for="r-type-fr">Type d'établissement <span class="opt">(facultatif)</span></label>
+              <select id="r-type-fr" name="venue_type"><option value="">Choisir…</option><option>Restaurant</option><option>Fast-food</option><option>Café / bar</option><option>Food court</option><option>Stade / événement</option><option>Autre</option></select>
+            </div>
+            <div class="field field--full">
+              <label for="r-demand-fr">Votre demande <span class="opt">(facultatif)</span></label>
+              <textarea id="r-demand-fr" name="demand" rows="3" maxlength="1000" placeholder="Une question, un besoin particulier ? Écrivez-le ici."></textarea>
+            </div>
+          </div>
+          <input class="hp" type="checkbox" name="botcheck" tabindex="-1" aria-hidden="true">
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span>J'accepte que FlashServe utilise ces informations pour me recontacter au sujet du programme pilote. <span aria-hidden="true">*</span></span>
+          </label>
+          <p class="privacy">Vos informations sont envoyées par e-mail à FlashServe via le service Web3Forms, uniquement pour traiter votre réservation. Elles ne sont ni revendues, ni utilisées à d'autres fins.</p>
+          <button class="btn btn--primary btn--lg btn--block" type="submit" data-label="Envoyer ma réservation" data-sending="Envoi en cours…">Envoyer ma réservation</button>
+          <p class="form-error" role="alert" hidden>L'envoi n'a pas abouti. Réessayez dans un instant ou écrivez-nous directement à <a href="mailto:flashserve@icloud.com?subject=FLASHSERVE%20Pilote%20request%20---&amp;body=Bonjour%20l%27%C3%A9quipe%20FlashServe%2C%0D%0A%0D%0ANous%20souhaitons%20rejoindre%20le%20Programme%20Partenaire%20Pilote%202027.%0D%0A%0D%0ANom%20du%20restaurant%20%3A%0D%0AVille%20%3A%0D%0APersonne%20de%20contact%20%3A%0D%0AT%C3%A9l%C3%A9phone%20%3A%0D%0A%0D%0AMerci%20%21">flashserve@icloud.com</a>.</p>
+        </form>
+      </div>
+
+      <div class="dlg-view dlg-success" data-view="success" hidden>
+        <span class="success-check"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.3 4.3L19 7"/></svg></span>
+        <h2 tabindex="-1">Réservation envoyée !</h2>
+        <p>Merci, votre place est pré-réservée. Nous vous recontactons très vite pour préparer votre lancement.</p>
+        <button class="btn btn--primary btn--lg" type="button" data-close-dialog>Fermer</button>
+      </div>
+    </div>
+  </dialog>
 </body>
 </html>
