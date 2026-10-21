@@ -1,0 +1,29 @@
+{
+  "name": "FlashServe",
+  "short_name": "FlashServe",
+  "description": "Vos clients commandent sur leur téléphone dès qu'ils approchent, sans file d'attente. Programme pilote dès le 1er janvier 2027 à CHF 59.90/mois.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0B1F3A",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
